@@ -1,0 +1,42 @@
+command:
+  - /bin/sh
+  - -c
+  - |
+    cd frontend && npm install && npm run build && cd .. && pip install -r requirements.txt && python app.py
+env:
+  - name: PORT
+    value: "8000"
+  - name: DATABRICKS_PAT
+    value: ""
+  - name: DATABRICKS_HOSTNAME
+    value: "{{databricks_hostname}}"
+  - name: CHAT_HISTORY_TABLE
+    value: "{{chat_history_table}}"
+  - name: WORKSPACE_HOST
+    value: "{{databricks_hostname}}"
+  - name: SQL_WAREHOUSE_HTTP_PATH
+    value: "{{sql_warehouse_http_path}}"
+  - name: LLM_MODEL
+    value: "databricks-claude-sonnet-4-5"
+  - name: VECTOR_INDEX_NAME
+    value: '{{vector_index_name}}'
+  - name: "SUGGESTION_QUESTIONS_TABLE"
+    value: "{{suggestion_questions_table}}"
+  - name: SCORE_THRESHOLD
+    value: 0.55
+  - name: UPPER_SCORE_THRESHOLD
+    value: 0.95
+  - name: MAX_SUGGESTIONS
+    value: 4
+  - name: MIN_CHARS_FOR_SUGGESTIONS
+    value: 2
+  - name: SUPERVISOR_ENDPOINT_NAME
+    value: "{{supervisor_endpoint_name}}"
+  - name: SUPERVISOR_ENDPOINT_URL
+    value: "{{supervisor_endpoint_url}}"
+  - name: SUPERVISOR_EXPERIMENT_ID
+    value: "{{supervisor_experiment_id}}"
+  - name: NARRATIVE_DECK_VOLUME_PATH
+    value: "{{narrative_deck_volume_path}}"
+  - name: ENABLE_DEBUG
+    value: "false"

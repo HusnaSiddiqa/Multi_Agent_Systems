@@ -1,0 +1,21 @@
+# Template for system_files/org_config.local.yaml
+# Copy this file to org_config.local.yaml (gitignored) and fill in real values.
+
+organization_name: "<ORGANIZATION_NAME>"
+team_name: "<TEAM_NAME>"
+
+databricks_hostname: "<DATABRICKS_HOSTNAME>"
+sql_warehouse_http_path: "<SQL_WAREHOUSE_HTTP_PATH>"
+chat_history_table: "<CHAT_HISTORY_TABLE>"
+vector_index_name: "<VECTOR_INDEX_NAME>"
+suggestion_questions_table: "<SUGGESTION_QUESTIONS_TABLE>"
+supervisor_endpoint_name: "<SUPERVISOR_ENDPOINT_NAME>"
+supervisor_endpoint_url: "<SUPERVISOR_ENDPOINT_URL>"
+supervisor_experiment_id: "<SUPERVISOR_EXPERIMENT_ID>"
+narrative_deck_volume_path: "<NARRATIVE_DECK_VOLUME_PATH>"
+
+genie_spaces:
+  - name: "<GENIE_SPACE_1_NAME>"
+    url: "<GENIE_SPACE_1_URL>"
+  - name: "<GENIE_SPACE_2_NAME>"
+    url: "<GENIE_SPACE_2_URL>"
