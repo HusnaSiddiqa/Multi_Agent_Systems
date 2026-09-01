@@ -1,4 +1,4 @@
-# C3PO v3.1 — Multi-Agent Analytics Assistant
+# Multi-Agent Analytics Assistant
 
 C3PO is an AI analytics assistant for an Oncology (APO) team. Users ask natural-language
 questions about claims metrics, NPS / share, and market dynamics, and C3PO answers with a
