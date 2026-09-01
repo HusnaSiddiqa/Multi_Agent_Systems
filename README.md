@@ -194,4 +194,3 @@ npm run dev
 
 ---
 
-Built by the Infigen team.
