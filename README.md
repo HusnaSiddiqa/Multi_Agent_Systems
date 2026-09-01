@@ -1,6 +1,6 @@
 # Multi-Agent Analytics Assistant
 
-The Assistant is an AI analytics assistant for an Oncology (APO) team. Users ask natural-language
+This app is an AI analytics assistant for an Oncology (APO) team. Users ask natural-language
 questions about claims metrics, NPS / share, and market dynamics, and answers with a
 data table, a plain-English insight, and optional PowerPoint / Excel exports.
 
